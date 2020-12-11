@@ -4,7 +4,7 @@
          "background.js"
       ]
    },
-   "description": "Access https://youtube.com/tv from a regular browser. No ads in this extension.",
+   "description": "Access https://stadia.google.com/ as a TV.",
    "icons": {
       "16": "icons/icon-16.png",
       "48": "icons/icon-48.png",
@@ -12,13 +12,13 @@
       "128": "icons/icon-128.png"
    },
    "manifest_version": 2,
-   "name": "YouTube TV",
+   "name": "Stadia TV",
    "permissions": [
-      "*://*.youtube.com/tv*",
+      "*://stadia.google.com/*",
       "webRequest",
       "webRequestBlocking"
    ],
    "browser_action": {},
-   "short_name": "youtube-tv",
+   "short_name": "stadia-tv",
    "version": "1.0.0"
 }

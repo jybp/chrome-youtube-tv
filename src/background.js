@@ -7,8 +7,8 @@ function fn(x) {
   return { requestHeaders: x.requestHeaders };
 }
 
-chrome.webRequest.onBeforeSendHeaders.addListener(fn, { urls: ["*://*.youtube.com/tv*"] }, ["blocking", "requestHeaders"]);
+chrome.webRequest.onBeforeSendHeaders.addListener(fn, { urls: ["*://stadia.google.com/*"] }, ["blocking", "requestHeaders"]);
 
 chrome.browserAction.onClicked.addListener(function (e) {
-  window.open("http://www.youtube.com/tv", "_blank")
+  window.open("https://stadia.google.com/", "_blank")
 });
